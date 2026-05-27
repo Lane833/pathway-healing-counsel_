@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>Pathway Healing Counseling</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f7f5;
+    color:#333;
+}
+
+header{
+    background:#5c7c6f;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2rem;
+}
+
+.hero{
+    padding:60px 20px;
+    text-align:center;
+    background:#e8efe9;
+}
+
+.hero h2{
+    font-size:2.2rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#5c7c6f;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#466257;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    padding:50px 0;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:1.5rem;
+    color:#5c7c6f;
+    margin:15px 0;
+}
+
+.booking-section{
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    margin-top:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+form{
+    display:grid;
+    gap:15px;
+}
+
+input, select{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+footer{
+    background:#5c7c6f;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+.hidden{
+    display:none;
+}
+
+.success{
+    color:green;
+    font-weight:bold;
+    margin-top:15px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:1.7rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pathway Healing Counseling</h1>
+    <p>Professional Online Counselling Worldwide</p>
+</header>
+
+<section class="hero">
+    <h2>Healing Starts With One Step</h2>
+
+    <p>
+        Compassionate and professional online counselling accessible from anywhere in the world.
+    </p>
+
+    <a href="#booking" class="btn">
+        Book a Session
+    </a>
+</section>
+
+<section class="container">
+
+    <h2 style="text-align:center; margin-bottom:30px;">
+        Our Services
+    </h2>
+
+    <div class="services">
+
+        <div class="card">
+            <h3>Individual Counselling</h3>
+            <p>Professional one-on-one emotional support.</p>
+            <div class="price">$40</div>
+        </div>
+
+        <div class="card">
+            <h3>Relationship Counselling</h3>
+            <p>Support for couples and relationship challenges.</p>
+            <div class="price">$60</div>
+        </div>
+
+        <div class="card">
+            <h3>Anxiety & Stress Support</h3>
+            <p>Help managing stress and anxiety.</p>
+            <div class="price">$35</div>
+        </div>
+
+    <div class="booking-section" id="booking">
+
+    <h2 style="margin-bottom:20px;">
+        Book Your Session
+    </h2>
+
+    <p style="margin-bottom:20px;">
+        Please make payment first before submitting your booking request.
+    </p>
+
+    <!-- PAYPAL BUTTON -->
+    <a 
+    href="https://paypal.me/Pathway6347"
+    target="_blank"
+    class="btn"
+    style="margin-bottom:25px;"
+    >
+        Pay Now
+    </a>
+
+    <!-- FORMSPREE FORM -->
+    <form 
+    action="https://formspree.io/f/mkoekopq" 
+    method="POST"
+    >
+
+        <input 
+        type="text" 
+        name="Full Name"
+        placeholder="Full Name" 
+        required
+        >
+
+        <input 
+        type="email" 
+        name="Email"
+        placeholder="Email Address" 
+        required
+        >
+
+        <select name="Service" required>
+            <option value="">Select Service</option>
+            <option>Individual Counselling</option>
+            <option>Relationship Counselling</option>
+            <option>Anxiety & Stress Support</option>
+        </select>
+
+        <input 
+        type="date" 
+        name="Session Date"
+        required
+        >
+
+        <input 
+        type="time" 
+        name="Session Time"
+        required
+        >
+
+        <button type="submit" class="btn">
+            Submit Booking
+        </button>
+
+    </form>
+
+</div>
+
+ 
+
+</section>
+
+<footer>
+    <p>
+        © 2026 Pathway Healing Counseling | Worldwide Online Counselling
+    </p>
+</footer>
+
+
+</body>
+</html>
